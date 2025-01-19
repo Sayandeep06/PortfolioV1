@@ -67,6 +67,7 @@ export const projectsData = [
       "The Shoe Web Store is a sleek, responsive e-commerce platform built with React and Tailwind CSS and hosted on netlify, offering seamless navigation, modern UI design",
     tags: ["JavaScript", "React", "Tailwind"],
     imageUrl: nike,
+    url: "https://shoewebstore.netlify.app/",
   },
   {
     title: "Smart Mirror",
@@ -74,6 +75,7 @@ export const projectsData = [
       "The Typify Smart Mirror is a voice-controlled device . I led the project, winning the Technothon IoT Exposition.",
     tags: ["Node.js", "Raspberry Pi", "Google Assistant API", "Youtube API"],
     imageUrl: iot,
+    url:"",
   },
   {
     title: "TO-DO app",
@@ -81,6 +83,7 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Express.js", "MongoDB", "CSS", "JWT"],
     imageUrl: todo,
+    url:"https://todo-notes-v1.netlify.app/",
   },
   {
     title: "Astralis",
@@ -88,7 +91,7 @@ export const projectsData = [
       "Astralis is a React app that showcases NASA’s Astronomy Picture of the Day (APOD) with daily updates and detailed insights.",
     tags: ["React", "JavaScript", "CSS", "Tailwind", "NASA APOD API"],
     imageUrl: astralis,
-  
+    url:"https://cosmosastralis.netlify.app/",
   },
 ] as const;
 
