@@ -32,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://t3.ftcdn.net/jpg/06/38/96/28/240_F_638962804_Kt6QEeKwaJLB8HgX0rynAS34B5nb1w41.jpg"
+              src="https://images.unsplash.com/photo-1496664444929-8c75efb9546f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaG5vbG9neSUyMHNldHVwfGVufDB8fDB8fHww"
               alt="potrait"
               width="192"
               height="192"
