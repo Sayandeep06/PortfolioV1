@@ -38,7 +38,7 @@ export default function About() {
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        football, or supporting my football club. I also enjoy{" "}
+        football, supporting my football club. I enjoy{" "}
         <span className="font-medium">exploring new things</span>. I am also
         quite interested in {" "}
         <span className="font-medium">history and philosophy.</span>
