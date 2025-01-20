@@ -4,9 +4,9 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
+import { HiDownload } from "react-icons/hi";
+import { FaTwitter, FaGithub } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -31,44 +31,44 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-gray-700 -mt-6 mb-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:deysayandeepdev@gmail.com">
           deysayandeepdev@gmail.com
-        </a>{" "}.
-        Use this form for minor queries.
+        </a>{" "} or through ⬇️
       </p>
-
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
         }}
       >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          placeholder="Your email"
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <SubmitBtn />
-      </form>
+
+        <a
+          className="bg-white p-5 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/sayandeep-dey-2a0aba227/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
+
+        <a
+          className="bg-white p-5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/Sayandeep06"
+          target="_blank"
+        >
+          <FaGithub />
+        </a>
+        <a
+          className="bg-white p-5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://x.com/gitpushsayan"
+          target="_blank"
+        >
+          <FaTwitter />
+        </a>
+      </motion.div>
     </motion.section>
   );
 }

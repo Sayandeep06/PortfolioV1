@@ -6,6 +6,7 @@ import nike from "@/public/nike.png";
 import astralis from "@/public/Astralis.png";
 import todo from "@/public/ss.png";
 import iot from "@/public/IOT.png"
+import terra from "@/public/terraform.png"
 export const links = [
   {
     name: "Home",
@@ -54,7 +55,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Kolkata, WB",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Express.js, JavaScript, TypeScript, Tailwind, and MongoDB. I'm open to full-time opportunities.",
+      "Full-stack developer working as a freelancer. My stack includes AWS, React, Express.js, JavaScript, TypeScript, Tailwind, and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
@@ -75,7 +76,7 @@ export const projectsData = [
       "The Typify Smart Mirror is a voice-controlled device . I led the project, winning the Technothon IoT Exposition.",
     tags: ["Node.js", "Raspberry Pi", "Google Assistant API", "Youtube API"],
     imageUrl: iot,
-    url:"",
+    url:"#projects",
   },
   {
     title: "TO-DO app",
@@ -92,6 +93,14 @@ export const projectsData = [
     tags: ["React", "JavaScript", "CSS", "Tailwind", "NASA APOD API"],
     imageUrl: astralis,
     url:"https://cosmosastralis.netlify.app/",
+  },
+  {
+    title: "Terraform AWS Infra",
+    description:
+      "The project automates the provisioning of scalable and secure infrastructure on AWS, including EC2 instances, load balacers, sgs, and networking components.",
+    tags: ["Terraform", "AWS", "EC2", "ALB", "IAM", "VPC"],
+    imageUrl: terra,
+    url:"https://github.com/Sayandeep06/Terraform_aws_infra",
   },
 ] as const;
 

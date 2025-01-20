@@ -3,10 +3,9 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -32,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1496664444929-8c75efb9546f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaG5vbG9neSUyMHNldHVwfGVufDB8fDB8fHww"
+              src="https://i.pinimg.com/474x/32/8b/21/328b21fa033d2ec32dba937f38cf4123.jpg"
               alt="potrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-50 w-50 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -53,7 +52,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            🧑🏻‍💻
+            
           </motion.span>
         </div>
       </div>
@@ -65,7 +64,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Sayandeep.</span> I'm a{" "}
         <span className="font-bold">Software Engineer</span> with a knack of{" "}
-        <span className="font-bold">problem solving</span>. I enjoy
+        <span className="font-bold">solving problems</span>. I enjoy
         diving into new projects and the<span className="italic"> latest technologies</span>.
       </motion.h1>
 
@@ -77,17 +76,13 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link
-          href="#contact"
+        <a
+          href="mailto:deysayandeepdev@gmail.com"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        </a>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
@@ -111,7 +106,14 @@ export default function Intro() {
           href="https://github.com/Sayandeep06"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithub />
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://x.com/gitpushsayan"
+          target="_blank"
+        >
+          <FaTwitter />
         </a>
       </motion.div>
     </section>
