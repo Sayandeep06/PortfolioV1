@@ -81,8 +81,8 @@ export const projectsData = [
   {
     title: "TO-DO app",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Express.js", "MongoDB", "CSS", "JWT"],
+      "A web app to manage to-do lists and notes efficiently, built with React and CSS, featuring CRUD operations.",
+    tags: ["React", "Express.js", "MongoDB", "CSS"],
     imageUrl: todo,
     url:"https://todo-notes-v1.netlify.app/",
   },
