@@ -8,7 +8,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithub, FaTwitter, FaTwitterSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-
+import { SiLeetcode } from "react-icons/si";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -114,6 +114,13 @@ export default function Intro() {
           target="_blank"
         >
           <FaTwitter />
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://leetcode.com/u/Sayan_3055/"
+          target="_blank"        
+        >
+          <SiLeetcode/>
         </a>
       </motion.div>
     </section>
