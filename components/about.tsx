@@ -19,10 +19,10 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Highly motivated Software engineer with a versitile array of skills, currently pursuing a B.Tech degree in{" "}
+        Highly motivated Software engineer with a versatile array of skills, currently pursuing a B.Tech degree in{" "}
         <span className="font-medium">Computer Science</span>. I dabbled across various domains but found my passion in{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">Solving problems and finding innovative software solutions </span> is what movitates me. I love the
+        <span className="italic">Solving problems and finding innovative software solutions </span> is what motivates me. I love the
         thrill of a complex solution be it LeetCode or learning a new language/framework to implement something new. 
         Among all the programming languages I know, <span className="font-medium">Java</span> is where my expertise truly lies, especially when it comes to complex problem-solving in DSA.
         However for development, I focus on
