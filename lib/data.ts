@@ -4,9 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import nike from "@/public/nike.png";
 import astralis from "@/public/Astralis.png";
-import todo from "@/public/ss.png";
 import iot from "@/public/IOT.png"
-import terra from "@/public/terraform.png"
+import huddlex from "@/public/huddlex.png"
+import pay from "@/public/pay.png"
 export const links = [
   {
     name: "Home",
@@ -18,7 +18,7 @@ export const links = [
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "#projects", 
   },
   {
     name: "Skills",
@@ -63,12 +63,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Web Store",
+    title: "HuddleX",
     description:
-      "The Shoe Web Store is a sleek, responsive e-commerce platform built with React and Tailwind CSS and hosted on netlify, offering seamless navigation, modern UI design",
-    tags: ["JavaScript", "React", "Tailwind"],
-    imageUrl: nike,
-    url: "https://shoewebstore.netlify.app/",
+      "A real-time collaboration platform with video conferencing, screen sharing, and team interaction.",
+    tags: ["NextJs", "Clerk", "Shadcn"],
+    imageUrl: huddlex,
+    url: "https://huddlex.vercel.app/",
   },
   {
     title: "Smart Mirror",
@@ -79,12 +79,12 @@ export const projectsData = [
     url:"#projects",
   },
   {
-    title: "TO-DO app",
+    title: "Web Store",
     description:
-      "A web app to manage to-do lists and notes efficiently, built with React and CSS, featuring CRUD operations.",
-    tags: ["React", "Express.js", "MongoDB", "CSS"],
-    imageUrl: todo,
-    url:"https://todo-notes-v1.netlify.app/",
+      "The Shoe Web Store is a sleek, responsive e-commerce platform built with React and Tailwind CSS and hosted on netlify, offering seamless navigation, modern UI design",
+    tags: ["JavaScript", "React", "Tailwind"],
+    imageUrl: nike,
+    url: "https://shoewebstore.netlify.app/",
   },
   {
     title: "Astralis",
@@ -95,12 +95,12 @@ export const projectsData = [
     url:"https://cosmosastralis.netlify.app/",
   },
   {
-    title: "Terraform AWS Infra",
+    title: "SwiftPay",
     description:
-      "The project automates the provisioning of scalable and secure infrastructure on AWS, including EC2 instances, load balacers, sgs, and networking components.",
-    tags: ["Terraform", "AWS", "EC2", "ALB", "IAM", "VPC"],
-    imageUrl: terra,
-    url:"https://github.com/Sayandeep06/Terraform_aws_infra",
+      "A digital payment platform that enables users to check balance, transfer money.",
+    tags: ["Node.js", "React.js", "Render"],
+    imageUrl: pay,
+    url:"https://swiftpayv2.netlify.app/",
   },
 ] as const;
 
