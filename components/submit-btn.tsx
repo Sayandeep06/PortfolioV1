@@ -7,7 +7,6 @@ export default function SubmitBtn() {
 
   const handleClick = () => {
     setIsSubmitting(true);
-    // Simulate form submission delay
     setTimeout(() => {
       setIsSubmitting(false);
     }, 2000);

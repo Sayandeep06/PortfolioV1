@@ -28,9 +28,9 @@ export default function About() {
         However for development, I focus on
         {" "} 
         <span className="font-medium">
-          JavaScript and its frameworks, leveraging technologies like React, Express.js, Node.js, and MongoDB
+          Nextjs with Postgres and some other frameworks/libraries like React, Express.js, Node.js.
         </span>
-        . I am also familiar with TypeScript, Tailwind and Terraform. I am always looking to
+        . I am familiar with TypeScript, Tailwind and Terraform. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.

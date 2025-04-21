@@ -7,6 +7,7 @@ import astralis from "@/public/Astralis.png";
 import iot from "@/public/IOT.png"
 import huddlex from "@/public/huddlex.png"
 import pay from "@/public/pay.png"
+import soundroom from "@/public/soundroom.png"
 export const links = [
   {
     name: "Home",
@@ -79,6 +80,14 @@ export const projectsData = [
     url:"#projects",
   },
   {
+    title: "SoundRoom",
+    description:
+      "Collaborative music streaming platform where users can add music videos, vote on them, and watch them together in a dynamic queue based on community upvotes",
+    tags: ["NextJs", "NextAuth", "Shadcn"],
+    imageUrl: soundroom,
+    url: "https://soundroom-1.vercel.app/",
+  },
+  {
     title: "Web Store",
     description:
       "The Shoe Web Store is a sleek, responsive e-commerce platform built with React and Tailwind CSS and hosted on netlify, offering seamless navigation, modern UI design",
@@ -111,6 +120,8 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "PostgreSQL",
+  "Prisma",
   "Next.js",
   "Node.js",
   "Git",
